@@ -11,7 +11,7 @@ model_path = os.path.abspath("Model/spam_classifier_model.pkl")
 with open(model_path, "rb") as f:
     model = pickle.load(f)
 
-# Load dataset and fit CountVectorizer little changes
+# Load dataset and fit CountVectorizer little changes no changes reuquired
 dataset_path = os.path.abspath("Dataset/spam.csv")
 df = pd.read_csv(dataset_path, encoding="latin-1")
 df = df.rename(columns={'v1': 'class', 'v2': 'message'})  # if needed
